@@ -1,0 +1,9 @@
+//
+// Select
+//
+// 1. Remove the inheritance of text transform in Firefox.
+// ---------------------------------------------------------------------------------
+
+select {
+  text-transform: none;
+}
