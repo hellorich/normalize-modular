@@ -1,0 +1,26 @@
+//
+// Button
+//
+// 1. Remove the inheritance of text transform in Edge, Firefox, and IE.
+// 2. Correct the inability to style clickable types in iOS.
+// 3. Restore the focus styles unset by the previous rule.
+// 4. Remove the inner border and padding in Firefox.
+// ---------------------------------------------------------------------------------
+
+button {
+  text-transform: none; // 1
+
+  & [type='reset'],
+  & [type='submit'],
+    -webkit-appearance: button; // 2
+  }
+
+  &:-moz-focusring {
+    outline: 1px dotted ButtonText; // 3
+  }
+
+  &::-moz-focus-inner { // 4
+    border: 0;
+    padding: 0;
+  }
+}
