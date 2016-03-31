@@ -1,0 +1,16 @@
+//
+// Bold
+//
+// 1. Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+// 2. Add the correct font weight in Chrome, Edge, and Safari.
+//
+// (!CHECK) Can we nest the rules?
+// ---------------------------------------------------------------------------------
+
+b {
+  font-weight: inherit;
+}
+
+b {
+  font-weight: bolder;
+}
