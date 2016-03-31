@@ -1,9 +1,11 @@
 //
 // Figure
 //
-// 1. Add the correct margin in IE 8.
+// 1. Add the correct display in IE 9-.
+// 2. Add the correct margin in IE 8.
 // ---------------------------------------------------------------------------------
 
 figure {
-  margin: 1em 40px;
+  display: block; // 1
+  margin: 1em 40px; // 2
 }
