@@ -2,8 +2,14 @@
 // Audio
 //
 // 1. Add the correct display in IE 9-.
+// 2. Add the correct display in iOS 4-7.
 // ---------------------------------------------------------------------------------
 
 audio {
-  display: inline-block;
+  display: inline-block; // 1
+
+  &:not([controls]) { // 2
+    display: none;
+    height: 0;
+  }
 }
