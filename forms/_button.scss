@@ -1,25 +1,31 @@
 //
 // Button
 //
-// 1. Remove the inheritance of text transform in Edge, Firefox, and IE.
-// 2. Correct the inability to style clickable types in iOS.
-// 3. Restore the focus styles unset by the previous rule.
-// 4. Remove the inner border and padding in Firefox.
+// 1. Change font properties to `inherit` in all browsers (opinionated).
+// 2. Remove the margin in Firefox and Safari.
+// 3. Show the overflow in IE.
+// 4. Remove the inheritance of text transform in Edge, Firefox, and IE.
+// 5. Correct the inability to style clickable types in iOS.
+// 6. Restore the focus styles unset by the previous rule.
+// 7. Remove the inner border and padding in Firefox.
 // ---------------------------------------------------------------------------------
 
 button {
-  text-transform: none; // 1
+  font: inherit; // 1
+  margin: 0; // 2
+  overflow: visible; // 3
+  text-transform: none; // 4
 
   & [type='reset'],
   & [type='submit'],
-    -webkit-appearance: button; // 2
+    -webkit-appearance: button; // 5
   }
 
   &:-moz-focusring {
-    outline: 1px dotted ButtonText; // 3
+    outline: 1px dotted ButtonText; // 6
   }
 
-  &::-moz-focus-inner { // 4
+  &::-moz-focus-inner { // 7
     border: 0;
     padding: 0;
   }

@@ -1,0 +1,10 @@
+//
+// Select 
+//
+// 1. Restore the font weight unset by the previous rule. (!CHECK) This may be
+//    contextual if the other rule is not used.
+// ---------------------------------------------------------------------------------
+
+optgroup {
+  font-weight: bold; // 1
+}

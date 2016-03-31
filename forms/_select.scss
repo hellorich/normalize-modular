@@ -1,9 +1,15 @@
 //
 // Select
 //
-// 1. Remove the inheritance of text transform in Firefox.
+// 1. Change font properties to `inherit` in all browsers (opinionated).
+// 2. Remove the margin in Firefox and Safari.
+// 3. Show the overflow in Edge, Firefox, and IE.
+// 4. Remove the inheritance of text transform in Firefox.
 // ---------------------------------------------------------------------------------
 
 select {
-  text-transform: none;
+  font: inherit; // 1
+  margin: 0; // 2
+  overflow: visible; // 3
+  text-transform: none; // 4
 }
