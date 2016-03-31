@@ -1,0 +1,16 @@
+//
+// Links
+//
+// 1. Remove the gray background on active links in IE 10.
+// 2. Remove the outline on focused links when they are also active or hovered in 
+//    all browsers (opinionated).
+// ---------------------------------------------------------------------------------
+
+a {
+  background-color: transparent; // 1
+
+  &:active,
+  &:hover {
+    outline-width: 0; // 2
+  }
+}
